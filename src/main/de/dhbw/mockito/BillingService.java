@@ -1,4 +1,4 @@
-package main.de.dhbw;
+package main.de.dhbw.mockito;
 
 import java.util.ArrayList;
 import java.util.List;

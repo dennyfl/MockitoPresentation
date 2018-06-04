@@ -1,4 +1,4 @@
-package main.de.dhbw;
+package main.de.dhbw.mockito;
 
 public class Bill {
 

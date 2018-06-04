@@ -1,19 +1,16 @@
-package test.de.dhbw;
+package test.de.dhbw.mockito;
 
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.when;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.mockito.Mockito;
-import org.mockito.junit.MockitoJUnitRunner;
 
-import main.de.dhbw.BillingService;
-import main.de.dhbw.BillingServiceException;
-import main.de.dhbw.TaxHelper;
-import main.de.dhbw.ValueAddedTax;
+import main.de.dhbw.mockito.BillingService;
+import main.de.dhbw.mockito.BillingServiceException;
+import main.de.dhbw.mockito.TaxHelper;
+import main.de.dhbw.mockito.ValueAddedTax;
 
-@RunWith(MockitoJUnitRunner.class)
 public class BillingServiceTest {
 
 	TaxHelper taxHelper = Mockito.mock(TaxHelper.class);
@@ -35,7 +32,7 @@ public class BillingServiceTest {
 
 		assertTrue(100.0 == objectUnderTest.deductTax(119.0, valueAddedTax));
 	}
-	
+
 	@Test(expected = BillingServiceException.class)
 	public void deductTaxFailTest() {
 		ValueAddedTax valueAddedTax = new ValueAddedTax(19.0);
@@ -43,9 +40,9 @@ public class BillingServiceTest {
 
 		assertTrue(100.0 == objectUnderTest.deductTax(119.0, valueAddedTax));
 	}
-	
+
 	@Test
-	public void addTaxToBillsTest(){
-		
+	public void addTaxToBillsTest() {
+
 	}
 }
