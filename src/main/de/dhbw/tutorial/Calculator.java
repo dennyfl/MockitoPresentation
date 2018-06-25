@@ -16,9 +16,9 @@ public class Calculator {
 		return calculatorService.multiply(numberOne, numberTwo);
 	}
 
-	public double devide(int numberOne, int numberTwo) {
+	public double divide(int numberOne, int numberTwo) {
 		try {
-			return calculatorService.devide(numberOne, numberTwo);
+			return calculatorService.divide(numberOne, numberTwo);
 		} catch (NumberFormatException nfe) {
 			throw new CalculatorException();
 		}

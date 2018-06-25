@@ -18,7 +18,7 @@ public class CalculatorServiceImpl implements CalculatorService {
 	}
 
 	@Override
-	public double devide(int firstNumber, int secondNumber) {
+	public double divide(int firstNumber, int secondNumber) {
 		if (secondNumber != 0) {
 			return firstNumber / secondNumber;
 		} else {

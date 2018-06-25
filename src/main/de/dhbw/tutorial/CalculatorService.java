@@ -8,5 +8,5 @@ public interface CalculatorService {
 
 	int multiply(int firstNumber, int secondNumber);
 
-	double devide(int firstNumber, int secondNumber);
+	double divide(int firstNumber, int secondNumber);
 }
